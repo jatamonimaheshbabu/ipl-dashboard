@@ -70,14 +70,14 @@ class TeamMatches extends Component {
     return (
       <div className="responsive-container">
         <img src={teamBannerURl} alt="team banner" className="team-banner" />
-        <LatestMatch latestMatchDate={latestMatch} />
+        <LatestMatch latestMatchData={latestMatch} />
         {this.renderRecentMatchesList()}
       </div>
     )
   }
 
   renderLoader = () => (
-    <div className="loader-container">
+    <div testid="loader" className="loader-container">
       <Loader type="Oval" color="#ffffff" height={50} />
     </div>
   )

@@ -1,18 +1,17 @@
-// Write your code here
 import './index.css'
 
 const LatestMatch = props => {
-  const {latestMatchData} = props
+  const {latestMatchData = {}} = props
   const {
-    competingTeam,
-    date,
-    venue,
-    result,
-    competingTeamLogo,
-    firstInnings,
-    secondInnings,
-    manOfTheMatch,
-    umpires,
+    competingTeam = 'N/A',
+    date = 'N/A',
+    venue = 'N/A',
+    result = 'N/A',
+    competingTeamLogo = '',
+    firstInnings = 'N/A',
+    secondInnings = 'N/A',
+    manOfTheMatch = 'N/A',
+    umpires = 'N/A',
   } = latestMatchData
 
   return (
